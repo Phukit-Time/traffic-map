@@ -11,11 +11,11 @@
     </style>
     <script>
       let map;
-
+      const location = { lat: 13.829987, lng: 100.569582 }
       function initMap() {
         // Initialize the map
         map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 13.830201, lng: 100.569582 },
+          center: location,
           zoom: 18,
         });
 
@@ -25,7 +25,7 @@
 
         // Add a marker
         const marker = new google.maps.Marker({
-        position: { lat: 13.830201, lng: 100.569582 },
+        position: location,
         map: map,
         title: "KISRA",
         });
