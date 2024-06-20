@@ -22,6 +22,13 @@
         // Add the traffic layer
         const trafficLayer = new google.maps.TrafficLayer();
         trafficLayer.setMap(map);
+
+        // Add a marker
+        const marker = new google.maps.Marker({
+        position: { lat: 13.8311163, lng: 100.5696188 },
+        map: map,
+        title: "KISRA",
+        });
       }
     </script>
   </head>
